@@ -62,7 +62,7 @@ const LogInForm = () => {
       });
       if (response?.ok) {
         toast.success("Login Successful");
-        window.location.assign("/dashboard");
+        window.location.assign("/add_locker");
         reset();
       } else if (response?.error) {
         toast.error(response?.error);
@@ -71,7 +71,7 @@ const LogInForm = () => {
   };
   return (
     <div className="w-full ">
-      <Link href="/dashboard" className="inline-block">
+      <Link href="/add_locker" className="inline-block">
         <SiteLogo className="h-10 w-10 2xl:h-14 2xl:w-14 text-primary" />
       </Link>
       <div className="2xl:mt-8 mt-6 2xl:text-3xl text-2xl font-bold text-default-900">
@@ -230,9 +230,9 @@ const LogInForm = () => {
       </div>
       <div className="mt-6 text-center text-base text-default-600">
         Don't have an account?{" "}
-        <Link href="/auth/register3" className="text-primary">
+        {/* <Link href="/auth/register3" className="text-primary">
           Sign Up{" "}
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

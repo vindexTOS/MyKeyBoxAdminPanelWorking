@@ -52,18 +52,18 @@ const ThemeCustomize = ({
         </SheetHeader>
         <ScrollArea className="h-[calc(100%-120px)] -mx-6 px-6">
           <div className=" space-y-8 mt-3">
-            <SelectLayout />
+            {/* <SelectLayout /> */}
             <SelectTheme />
-            <RtlSwitcher />
+            {/* <RtlSwitcher /> */}
             <ThemeChange />
-            <SidebarChange />
+            {/* <SidebarChange /> */}
             <SidebarImage />
             <RadiusInit />
             <HeaderStyle />
             <FooterStyle />
           </div>
         </ScrollArea>
-        <SheetFooter className="py-4 gap-3 lg:flex justify-between hidden  ">
+        {/* <SheetFooter className="py-4 gap-3 lg:flex justify-between hidden  ">
           <Button asChild className="w-full">
             <Link href="https://1.envato.market/vNaJR3">Buy Now</Link>
           </Button>
@@ -75,7 +75,7 @@ const ThemeCustomize = ({
               Our Portfolio
             </Link>
           </Button>
-        </SheetFooter>
+        </SheetFooter> */}
       </SheetContent>
     </Sheet>
   );

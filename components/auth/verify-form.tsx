@@ -10,7 +10,7 @@ const VerfiyForm = () => {
   const otpArray: string[] = Array.from({ length: totalOtpField }, () => "");
   const [otp, setOtp] = useState<string[]>(otpArray);
   const otpFields = Array.from({ length: totalOtpField }, (_, index) => index);
-  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
+  const inputRefs:any = useRef<any>();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>, index: number) => {
     const { value } = e.target;
@@ -70,7 +70,7 @@ const VerfiyForm = () => {
               onKeyDown={(event) => handleKeyDown(index, event)}
               maxLength={1}
               className="w-10 h-10 sm:w-[60px] sm:h-16 rounded border-default-300 text-center text-2xl font-medium text-default-900"
-              ref={(ref) => (inputRefs.current[index] = ref)}
+              ref={(ref:any) => (inputRefs.current[index] = ref)}
             />
           ))}
         </div>

@@ -1,8 +1,16 @@
 "use client";
 import { Input } from "@/components/ui/input";
-const BasicInputText = () => {
+import { FC } from "react";
+
+type BasceInputProps = {
+   placeholder:string 
+   
+}
+
+
+const BasicInputText:FC<BasceInputProps> = ({placeholder}) => {
   return (
-    <Input type="text" placeholder="Username" />
+    <Input type="text" placeholder={placeholder}/>
   );
 };
 

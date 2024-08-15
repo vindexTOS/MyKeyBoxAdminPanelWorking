@@ -14,6 +14,7 @@ import {
   Calendar,
  
 } from "@/components/svg";
+import { Key } from "lucide-react";
 
 
 export interface MenuItemProps {
@@ -36,25 +37,27 @@ export const menusConfig = {
   sidebarNav: {
     modern: [
       {
-        title: "Dashboard",
+        title: "Locker",
         icon: DashBoard,
+        href: "/add_locker",
         child: [
           {
-            title: "Analytics",
-            href: "/dashboard",
-            icon: Graph,
-          },
-          {
-            title: "Ecommerce",
-            href: "/ecommerce",
-            icon: Cart,
-          },
-          {
-            title: "project ",
-            href: "/project",
-            icon: ClipBoard,
-          },
-        ],
+            title: "Locker",
+            href: "/add_locker",
+            icon: Key,
+            nested: [
+              {
+                title: "Add Locker",
+                href: "/add_locker",
+              
+              },
+              {
+                title: "Locker List",
+                href: "/locker_list",
+                  }
+            ]
+          }
+        ]
       },
       {
         title: "Application",
@@ -119,14 +122,14 @@ export const menusConfig = {
         
         child: [
           {
-            title: "Analytics",
+            title: "Add Locker",
             href: "/dashboard",
-            icon: Graph,
+            icon:Key,
           },
           {
             title: "Ecommerce",
             href: "/ecommerce",
-            icon: Cart,
+            icon: Key,
           },
           {
             title: "Project ",
@@ -171,10 +174,7 @@ export const menusConfig = {
         href: "/projects",
       },
 
-      {
-        isHeader: true,
-        title: "Pages",
-      },
+    
      
     ],
   },

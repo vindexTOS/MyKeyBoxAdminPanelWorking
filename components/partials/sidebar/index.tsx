@@ -21,8 +21,8 @@ const Sidebar = ({ trans }: { trans: string }) => {
   } else {
     const sidebarComponents: { [key: string]: JSX.Element } = {
       module: <ModuleSidebar trans={trans} />,
-      popover: <PopoverSidebar trans={trans} />,
-      classic: <ClassicSidebar trans={trans} />,
+      popover: <ModuleSidebar trans={trans} />,
+      classic: <ModuleSidebar trans={trans} />,
     };
 
     selectedSidebar = sidebarComponents[sidebarType] || <ModuleSidebar trans={trans} />;
