@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { FC } from "react";
 
 type BasceInputProps = {
-   placeholder:string 
+   placeholder?:string 
    
 }
 
